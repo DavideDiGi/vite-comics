@@ -28,10 +28,4 @@ export default {
 
 <style lang="scss">
 @use "./styles/main";
-
-.container {
-  width: 80vw;
-  margin: 0 auto;
-  background-color: aquamarine;
-}
 </style>
