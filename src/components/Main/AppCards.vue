@@ -82,16 +82,20 @@ export default {
     }
 }
 
-
 </script>
 
 <template>
     <div class="cards">
-        <div class="card" v-for="card in cards">
+        <a href="#" class="card" v-for="card in cards">
             <div class="card-cover"> <img :src="card.thumb" :alt="card.series"></div>
             <div class="card-title">{{ card.series.toUpperCase() }}</div>
-        </div>
+        </a>
     </div>
+
+    <div class="load">
+        <button class="lil button">LOAD MORE</button>
+    </div>
+
 </template>
 
 <style lang="scss" scoped>
@@ -101,10 +105,11 @@ export default {
 
     .card {
         width: calc(100% / 6);
-        height: 250px;
-        // background-color: gold;
+        height: 300px;
         padding: 10px;
         border: 1px solid black;
+        text-decoration: none;
+        color: white;
 
         .card-cover {
             background-color: gold;
@@ -121,5 +126,15 @@ export default {
             font-size: 0.8rem;
         }
     }
+}
+
+.load {
+    text-align: center;
+    padding-bottom: 20px;
+
+    .lil {
+        padding: 10px 40px;
+    }
+
 }
 </style>

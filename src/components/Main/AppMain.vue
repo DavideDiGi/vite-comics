@@ -1,19 +1,20 @@
 <script>
 import AppCards from './AppCards.vue';
+import AppJumbotron from './AppJumbotron.vue';
 
 export default {
     name: 'AppMain',
     components: {
-        AppCards
-    },
-
+        AppCards,
+        AppJumbotron
+    }
 }
 </script>
 
 <template>
 
     <main>
-
+        <AppJumbotron />
         <div class="container">
             <AppCards />
         </div>
@@ -22,11 +23,10 @@ export default {
 
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 main {
     width: 100vw;
     background-color: black;
-    padding: 50px 0;
 
     .container {
         width: 80vw;
