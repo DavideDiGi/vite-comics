@@ -1,6 +1,12 @@
 <script>
+import AppCards from './AppCards.vue';
+
 export default {
     name: 'AppMain',
+    components: {
+        AppCards
+    },
+
 }
 </script>
 
@@ -8,12 +14,8 @@ export default {
 
     <main>
 
-        <div class="container box-main">
-
-            <div>
-                <h2> --˃ Content goes here ˂-- </h2>
-            </div>
-
+        <div class="container">
+            <AppCards />
         </div>
 
     </main>
@@ -29,10 +31,8 @@ main {
     .container {
         width: 80vw;
         margin: 0 auto;
-
-        div {
-            color: white;
-        }
+        color: white;
     }
+
 }
 </style>
